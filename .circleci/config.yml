@@ -3,13 +3,15 @@ jobs:
   build:
     working_directory: ~/docker-compose
     docker:
-      - image: circleci/node:8
+      - image: docker
     steps:
       - checkout
       - setup_remote_docker
       - run:
-          name: Install Goss
-          command: curl -fsSL https://goss.rocks/install | sh
+          name: Install cURL & Goss
+          command: |
+            apk add --quiet curl
+            curl -fsSL https://goss.rocks/install | sh
       - run:
           name: Build the docker image
           command: docker build -t docker-compose .
