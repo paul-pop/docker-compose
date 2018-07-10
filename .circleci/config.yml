@@ -17,4 +17,4 @@ jobs:
           command: docker build -t docker-compose .
       - run:
           name: Validate the container using Goss
-          command: dgoss run docker-compose
+          command: /usr/local/bin/dgoss run docker-compose

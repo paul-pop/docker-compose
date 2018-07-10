@@ -1,9 +1,8 @@
-ARG DOCKER_VERSION=latest
-ARG COMPOSE_VERSION
-
-FROM docker:${DOCKER_VERSION}
+FROM docker:latest
 
 MAINTAINER Paul Pop <paulpop88@gmail.com>
+
+ARG COMPOSE_VERSION
 
 RUN apk add --quiet py-pip && \
     pip install --quiet "docker-compose${COMPOSE_VERSION:+==}${COMPOSE_VERSION}" && \
