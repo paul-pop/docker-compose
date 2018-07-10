@@ -1,0 +1,7 @@
+command:
+  docker-compose version:
+    exit-status: 0
+    stdout:
+    - docker-compose
+    stderr: []
+    timeout: 10000
