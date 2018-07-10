@@ -1,5 +1,3 @@
-# docker-compose Docker image
-
 ![license](https://img.shields.io/github/license/paul-pop/docker-compose.svg)
 ![GitHub issues](https://img.shields.io/github/issues/paul-pop/docker-compose.svg)
 ![GitHub issues](https://img.shields.io/github/issues-pr/paul-pop/docker-compose.svg)
